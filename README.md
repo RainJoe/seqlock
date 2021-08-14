@@ -7,9 +7,9 @@ In some special situations, we need to make task execution in order through goro
 ## usage
 
 ```golang
-	l := NewSeqLock()
-    // seq is the task order, it's should start from zero and be monotonically increasing
-    l.Lock(seq)
-    // you task
-    l.Unlock(seq)
+l := NewSeqLock()
+// seq is the task order, it's should start from zero and be monotonically increasing
+l.Lock(seq)
+// your task
+l.Unlock(seq)
 ```
